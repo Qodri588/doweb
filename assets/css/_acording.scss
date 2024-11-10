@@ -75,6 +75,8 @@ $orange: #ff9900;
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  background-color: #1c1c1c;
+  padding: 1em;
 }
 
 /* Grid item styling */
@@ -86,7 +88,7 @@ $orange: #ff9900;
   flex-direction: column; /* Susun konten secara vertikal */
   align-items: center;
   justify-content: center;
-  border: black 0.5px solid;
+  border: $orange 5px solid;
 }
 
 .grid-item img {

@@ -21,3 +21,10 @@ weight = 30
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
+[minify]
+  minifyOutput = true
+[build.buildStats]
+  disableClasses = false
+  disableIDs = true
+  disableTags = false
+  enable = true
