@@ -1,0 +1,27 @@
+
+        <div class="logo">Bokepsin</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <script>
+          // script.js
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.getElementById("menu-icon");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuIcon.addEventListener("click", function() {
+        navLinks.classList.toggle("active");
+    });
+});
+        </script>

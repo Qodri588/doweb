@@ -1,0 +1,108 @@
+ $bg: #434645;
+$bg-text: #1c1c1c;
+$font-tags: #646c74;
+$orange: #ff9900;
+ .accordion {
+        width: 100%;
+        overflow: hidden;
+        background-color: $bg-text;
+    }
+
+/*     .accordion-item { */
+/*         border-bottom: 1px solid $bg; */
+/*     } */
+
+    .accordion-button {
+        font-size: 14 px;
+        font-weight: 700;
+        color: $orange;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75em 0.5rem;
+        cursor: pointer;
+        background-color: $bg-text;
+        border: none;
+        outline: none;
+        width: 100%;
+        text-align: left;
+        transition: background-color 0.5s ease;
+    }
+
+    .accordion-button:last-child {
+        border-bottom: none;
+    }
+
+    .accordion-button:hover {
+        background-color: $bg-text;
+    }
+
+    .accordion-icon {
+        font-size: 1.2rem;
+    }
+
+    .accordion-collapse {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .accordion-content {
+        padding: 15px 0;
+        color: $orange;
+        font-size: 0.9rem;
+    }
+
+    .accordion-item.active .accordion-collapse {
+        max-height: 200px; /* Height can be adjusted based on content */
+    }
+    
+    .container{
+      background-color: $bg-text;
+    }
+.item{
+  img{
+  //
+ // object-fit: cover;
+  
+  }
+}
+
+
+
+.grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* Grid item styling */
+.grid-item {
+  flex: 1 1 calc(50% - 16px); /* 2 columns for mobile */
+  padding: 0.5em;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column; /* Susun konten secara vertikal */
+  align-items: center;
+  justify-content: center;
+  border: black 0.5px solid;
+}
+
+.grid-item img {
+  height: 10rem;
+  object-fit: cover;
+  
+}
+
+.grid-item h4 {
+  margin-top: 10px; /* Spasi antara gambar dan judul */
+  color: white; /* Sesuaikan warna teks */
+}
+
+/* Non-mobile breakpoint for 4 columns */
+@media (min-width: 768px) {
+  .grid-item {
+    flex: 1 1 calc(25% - 16px); /* 4 columns for non-mobile */
+  }
+}

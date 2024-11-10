@@ -1,0 +1,64 @@
+// Definisi breakpoint
+$bp-s: 576px;
+$bp-l: 768px;
+$bp-xl: 1024px;
+$bp-xxl: 1280px;
+
+// Mixin breakpoint
+@mixin breakpoint($size) {
+  @media (min-width: #{$size}) {
+    & {
+      // Gaya CSS yang ingin diterapkan di breakpoint
+    }
+  }
+}
+
+// Contoh penggunaan mixin
+// .container {
+//   @include breakpoint($bp-s) {
+//     padding: 10px;
+//   }
+
+//   @include breakpoint($bp-l) {
+//     padding: 20px;
+//   }
+
+//   @include breakpoint($bp-xl) {
+//     padding: 30px;
+//   }
+
+//   @include breakpoint($bp-xxl) {
+//     padding: 40px;
+//   }
+// }
+
+
+
+
+
+$font : #cacaca;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Regular.woff2') format('woff2'),
+       url('fonts/Averta-Regular.woff') format('woff'),
+       url('fonts/Averta-Regular.ttf') format('truetype');
+}
+
+body{
+  font-family: 'Averta', sans-serif;
+  font-size: 16px;
+  background-color: $bg;
+  color : $font;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5{
+  color :#ff9900;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+a{
+  text-decoration: none;
+}

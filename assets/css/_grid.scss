@@ -1,0 +1,40 @@
+$container-max-width: 1200px;
+$gap: 10px;
+
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.item {
+  width: 100%;
+  
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
